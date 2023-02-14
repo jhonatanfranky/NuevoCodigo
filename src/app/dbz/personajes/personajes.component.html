@@ -1,0 +1,11 @@
+<p>personajes works!</p>
+
+<app-agregar></app-agregar>
+
+<h3>Personajes: </h3>
+<hr>
+    <ol>
+        <li *ngFor="let personaje of personajes">
+                {{personaje.nombre}} - {{personaje.poder}}
+        </li>
+    </ol>
