@@ -9,19 +9,22 @@ import { Personaje } from '../interfaces/dbz.interface';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
-
-  personajes: Personaje[]=[
-    {
-      nombre: "Koku",
-      poder: 15000
-    },
-    {
-      nombre: "Vegeta",
-      poder: 7500
-    }
-  ];
-  nuevo: Personaje={
+  nuevo: Personaje = {
     nombre: 'Maestro Roshi',
-    poder: 1000
+    poder: 1500
   }
+  constructor(){}
+  //para corregir y que funcione los servicios
+  //get personajes():Personaje[] {
+  // return this.dbzService.personajes;
+  // }
+  /* agregarNuevoPersonaje( argumento:Personaje ){
+    //debugger;
+    //this.personajes.push(argumento);
+  } */
+  //se conoce como una inyección
+ 
+  //constructor(private dbzService:DbzService){}
 }
+
+
